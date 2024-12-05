@@ -13,8 +13,8 @@ public class ModItems
 {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TestMod.MODID);
 
-    private static String bismuth = "bismuth";
-    private static String rawBismuth = "raw_bismuth";
+    private static final String bismuth = "bismuth";
+    private static final String rawBismuth = "raw_bismuth";
 
     public static final DeferredItem<Item> BISMUTH = ITEMS.register(bismuth, () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TestMod.MODID + ":" + bismuth)))));
     public static final DeferredItem<Item> RAW_BISMUTH = ITEMS.register(rawBismuth, () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TestMod.MODID + ":" + rawBismuth)))));

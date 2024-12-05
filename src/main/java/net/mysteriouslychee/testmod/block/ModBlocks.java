@@ -3,9 +3,11 @@ package net.mysteriouslychee.testmod.block;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.mysteriouslychee.testmod.TestMod;
@@ -20,11 +22,14 @@ public class ModBlocks
 {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TestMod.MODID);
 
-    private static String bismuthBlock = "bismuth_block";
-    private static String bismuthOre = "bismuth_ore";
+    private static final String bismuthBlock = "bismuth_block";
+    private static final String bismuthOre = "bismuth_ore";
+    private static final String bismuthDeepslateOre = "bismuth_deepslate_ore";
 
     public static final DeferredBlock<Block> BISMUTH_BLOCK = registerBlock(bismuthBlock, () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthBlock)))));
-    public static final DeferredBlock<Block> BISMUTH_ORE = registerBlock(bismuthOre, () -> new Block(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops().sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthOre)))));
+
+    public static final DeferredBlock<Block> BISMUTH_ORE = registerBlock(bismuthOre, () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthOre)))));
+    public static final DeferredBlock<Block> BISMUTH_DEEPSLATE_ORE = registerBlock(bismuthDeepslateOre, () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthDeepslateOre)))));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String id, Supplier<T> block)
     {

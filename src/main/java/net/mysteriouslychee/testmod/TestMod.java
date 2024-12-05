@@ -1,6 +1,7 @@
 package net.mysteriouslychee.testmod;
 
 import net.mysteriouslychee.testmod.block.ModBlocks;
+import net.mysteriouslychee.testmod.item.ModCreativeModeTabs;
 import net.mysteriouslychee.testmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -26,16 +27,18 @@ public class TestMod
     public static final String MODID = "testmod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public TestMod(IEventBus modEventBus, ModContainer modContainer)
+    public TestMod(IEventBus bus, ModContainer modContainer)
     {
-        modEventBus.addListener(this::commonSetup);
+        bus.addListener(this::commonSetup);
 
         NeoForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(bus);
 
-        modEventBus.addListener(this::addCreative);
+        ModItems.register(bus);
+        ModBlocks.register(bus);
+
+        bus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
