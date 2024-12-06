@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "bismuth",
-  "ingredient": {
-    "item": "testmod:bismuth_ore"
-  },
+  "ingredient": "testmod:bismuth_ore",
   "result": {
     "count": 1,
     "id": "testmod:bismuth"

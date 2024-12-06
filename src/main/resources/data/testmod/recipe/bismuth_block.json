@@ -1,10 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
   "key": {
-    "B": {
-      "item": "testmod:bismuth"
-    }
+    "B": "testmod:bismuth"
   },
   "pattern": [
     "BBB",

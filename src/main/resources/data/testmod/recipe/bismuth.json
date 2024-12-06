@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "testmod:bismuth_block"
-    }
+    [
+      "testmod:bismuth_block"
+    ]
   ],
   "result": {
-    "count": 9,
-    "id": "testmod:bismuth"
+    "id": "testmod:bismuth",
+    "count": 9
   }
 }

@@ -33,9 +33,9 @@ public class ModBlocks
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String id, Supplier<T> block)
     {
-        DeferredBlock<T> toReturn = BLOCKS.register(id, block);
-        registerBlockItem(id, toReturn);
-        return toReturn;
+        DeferredBlock<T> b = BLOCKS.register(id, block);
+        registerBlockItem(id, b);
+        return b;
     }
 
     private static <T extends Block> void registerBlockItem(String id, DeferredBlock<T> block)
