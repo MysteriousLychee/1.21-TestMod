@@ -25,6 +25,8 @@ public class ModCreativeModeTabs
             {
                 output.accept(ModItems.BISMUTH);
                 output.accept(ModItems.RAW_BISMUTH);
+                output.accept(ModItems.CHISEL);
+                output.accept(ModItems.RADISH);
             })
             .build());
 
@@ -36,6 +38,7 @@ public class ModCreativeModeTabs
                 output.accept(ModBlocks.BISMUTH_BLOCK);
                 output.accept(ModBlocks.BISMUTH_ORE);
                 output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+                output.accept(ModBlocks.MAGIC_BLOCK);
             })
             .build());
 
