@@ -6,9 +6,16 @@
   "item.testmod.raw_bismuth": "Raw Bismuth",
   "item.testmod.chisel": "Chisel",
   "item.testmod.radish": "Radish",
+  "item.testmod.starlight_ashes": "Starlight Ashes",
+  "item.testmod.frostfire_ice": "Frostfire Ice",
 
   "item.testmod.bismuth_block": "Block of Bismuth",
   "item.testmod.bismuth_ore": "Bismuth Ore",
   "item.testmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
-  "item.testmod.magic_block": "Magic Block"
+  "item.testmod.magic_block": "Magic Block",
+
+  "tooltip.testmod.magic_block": "This block is very §9MAGICAL§r!",
+  "tooltip.testmod.chisel.shift_down": "Changes blocks from their regular form into their §7BRICK§r form.",
+  "tooltip.testmod.chisel": "Press §6SHIFT§r for more information.",
+  "tooltip.testmod.radish": "Tastes yummy!"
 }
