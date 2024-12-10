@@ -9,7 +9,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.mysteriouslychee.testmod.TestMod;
 import net.mysteriouslychee.testmod.item.custom.ChiselItem;
-import net.mysteriouslychee.testmod.item.custom.FuelItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -57,8 +56,8 @@ public class ModItems
     });
 
     // Fuel Registries
-    public static final DeferredItem<Item> FROSTFIRE_ICE = ITEMS.register(frostfireIce, () -> new FuelItem(new Item.Properties()
-            .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TestMod.MODID + ":" + frostfireIce))), 800));
+    public static final DeferredItem<Item> FROSTFIRE_ICE = ITEMS.register(frostfireIce, () -> new Item(new Item.Properties()
+            .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TestMod.MODID + ":" + frostfireIce)))));
     public static final DeferredItem<Item> STARLIGHT_ASHES = ITEMS.register(starlightAshes, () -> new Item(new Item.Properties()
             .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TestMod.MODID + ":" + starlightAshes)))));
 
