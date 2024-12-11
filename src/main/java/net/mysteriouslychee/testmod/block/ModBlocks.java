@@ -6,10 +6,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.mysteriouslychee.testmod.TestMod;
 import net.mysteriouslychee.testmod.block.custom.MagicBlock;
 import net.mysteriouslychee.testmod.item.ModItems;
@@ -28,10 +28,28 @@ public class ModBlocks
     private static final String bismuthOre = "bismuth_ore";
     private static final String bismuthDeepslateOre = "bismuth_deepslate_ore";
     private static final String magicBlock = "magic_block";
+    private static final String bismuthStairs = "bismuth_stairs";
+    private static final String bismuthSlab = "bismuth_slab";
+    private static final String bismuthPressurePlate = "bismuth_pressure_plate";
+    private static final String bismuthButton = "bismuth_button";
+    private static final String bismuthFence = "bismuth_fence";
+    private static final String bismuthFenceGate = "bismuth_fence_gate";
+    private static final String bismuthWall = "bismuth_wall";
+    private static final String bismuthDoor = "bismuth_door";
+    private static final String bismuthTrapdoor = "bismuth_trapdoor";
 
 
     // Blocks
     public static final DeferredBlock<Block> BISMUTH_BLOCK = registerBlock(bismuthBlock, () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthBlock)))));
+    public static final DeferredBlock<StairBlock> BISMUTH_STAIRS = registerBlock(bismuthStairs, () -> new StairBlock(ModBlocks.BISMUTH_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthStairs)))));
+    public static final DeferredBlock<SlabBlock> BISMUTH_SLAB = registerBlock(bismuthSlab, () -> new SlabBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthSlab)))));
+    public static final DeferredBlock<PressurePlateBlock> BISMUTH_PRESSURE_PLATE = registerBlock(bismuthPressurePlate, () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthPressurePlate)))));
+    public static final DeferredBlock<ButtonBlock> BISMUTH_BUTTON = registerBlock(bismuthButton, () -> new ButtonBlock(BlockSetType.IRON, 20, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).noCollission().setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthButton)))));
+    public static final DeferredBlock<FenceBlock> BISMUTH_FENCE = registerBlock(bismuthFence, () -> new FenceBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthFence)))));
+    public static final DeferredBlock<FenceGateBlock> BISMUTH_FENCE_GATE = registerBlock(bismuthFenceGate, () -> new FenceGateBlock(WoodType.CHERRY, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthFenceGate)))));
+    public static final DeferredBlock<WallBlock> BISMUTH_WALL = registerBlock(bismuthWall, () -> new WallBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthWall)))));
+    public static final DeferredBlock<DoorBlock> BISMUTH_DOOR = registerBlock(bismuthDoor, () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).noOcclusion().setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthDoor)))));
+    public static final DeferredBlock<TrapDoorBlock> BISMUTH_TRAPDOOR = registerBlock(bismuthTrapdoor, () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).noOcclusion().setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthTrapdoor)))));
 
     public static final DeferredBlock<Block> BISMUTH_ORE = registerBlock(bismuthOre, () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthOre)))));
     public static final DeferredBlock<Block> BISMUTH_DEEPSLATE_ORE = registerBlock(bismuthDeepslateOre, () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthDeepslateOre)))));

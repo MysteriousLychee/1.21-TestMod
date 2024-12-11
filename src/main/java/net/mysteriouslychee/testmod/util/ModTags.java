@@ -12,9 +12,9 @@ public class ModTags
 {
     public static class Blocks
     {
-        private static TagKey<Block> createTag(String name)
+        private static TagKey<Block> createTag(String id)
         {
-            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(TestMod.MODID, name));
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(TestMod.MODID, id));
         }
     }
 
@@ -22,9 +22,9 @@ public class ModTags
     {
         public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
 
-        private static TagKey<Item> createTag(String name)
+        private static TagKey<Item> createTag(String id)
         {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(TestMod.MODID, name));
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(TestMod.MODID, id));
         }
     }
 }

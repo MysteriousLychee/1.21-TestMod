@@ -25,7 +25,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 public class TestMod
 {
     public static final String MODID = "testmod";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public TestMod(IEventBus bus, ModContainer modContainer)
     {

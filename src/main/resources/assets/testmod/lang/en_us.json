@@ -14,6 +14,22 @@
   "item.testmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
   "item.testmod.magic_block": "Magic Block",
 
+  "item.testmod.bismuth_stairs": "Bismuth Stairs",
+  "item.testmod.bismuth_slab": "Bismuth Slab",
+
+  "item.testmod.bismuth_button": "Bismuth Button",
+  "item.testmod.bismuth_pressure_plate": "Bismuth Pressure Plate",
+
+  "item.testmod.bismuth_fence": "Bismuth Fence",
+  "item.testmod.bismuth_fence_gate": "Bismuth Fence Gate",
+  "item.testmod.bismuth_wall": "Bismuth Wall",
+
+  "item.testmod.bismuth_door": "Bismuth Door",
+  "item.testmod.bismuth_trapdoor": "Bismuth Trapdoor",
+
+  "creativetab.testmod.bismuth_items": "Bismuth Items",
+  "creativetab.testmod.bismuth_blocks": "Bismuth Blocks",
+
   "tooltip.testmod.magic_block": "This block is very §9MAGICAL§r!",
   "tooltip.testmod.chisel.shift_down": "Changes blocks from their regular form into their §7BRICK§r form.",
   "tooltip.testmod.chisel": "Press §6SHIFT§r for more information.",
