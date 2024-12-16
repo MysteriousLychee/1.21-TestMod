@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.mysteriouslychee.testmod.TestMod;
 import net.mysteriouslychee.testmod.item.custom.ChiselItem;
@@ -40,7 +41,7 @@ public class ModItems
             .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TestMod.MODID + ":" + rawBismuth)))));
 
     // Advanced item registries
-    public static final DeferredItem<Item> CHISEL = ITEMS.register(chisel, () -> new ChiselItem(new Item.Properties().durability(32)
+    public static final DeferredItem<Item> CHISEL = ITEMS.register(chisel, () -> new ChiselItem(new Item.Properties().durability(32).rarity(Rarity.UNCOMMON)
             .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TestMod.MODID + ":" + chisel)))));
 
     // Food registries
