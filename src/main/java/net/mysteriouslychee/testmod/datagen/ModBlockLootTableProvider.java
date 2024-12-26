@@ -32,6 +32,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider
     {
         dropSelf(ModBlocks.BISMUTH_BLOCK.get());
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
+        dropSelf(ModBlocks.BISMUTH_LAMP_BLOCK.get());
         dropSelf(ModBlocks.BISMUTH_STAIRS.get());
         dropSelf(ModBlocks.BISMUTH_BUTTON.get());
         dropSelf(ModBlocks.BISMUTH_FENCE.get());

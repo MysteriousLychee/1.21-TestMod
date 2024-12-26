@@ -43,6 +43,7 @@ public class ModCreativeModeTabs
                 output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
 
                 output.accept(ModBlocks.MAGIC_BLOCK);
+                output.accept(ModBlocks.BISMUTH_LAMP_BLOCK);
 
                 output.accept(ModBlocks.BISMUTH_STAIRS);
                 output.accept(ModBlocks.BISMUTH_SLAB);

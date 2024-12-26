@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.mysteriouslychee.testmod.TestMod;
+import net.mysteriouslychee.testmod.block.custom.BismuthLampBlock;
 import net.mysteriouslychee.testmod.block.custom.MagicBlock;
 import net.mysteriouslychee.testmod.item.ModItems;
 import net.neoforged.bus.api.IEventBus;
@@ -37,6 +38,7 @@ public class ModBlocks
     private static final String bismuthWall = "bismuth_wall";
     private static final String bismuthDoor = "bismuth_door";
     private static final String bismuthTrapdoor = "bismuth_trapdoor";
+    private static final String bismuthLampBlock = "bismuth_lamp_block";
 
 
     // Blocks
@@ -55,6 +57,7 @@ public class ModBlocks
     public static final DeferredBlock<Block> BISMUTH_DEEPSLATE_ORE = registerBlock(bismuthDeepslateOre, () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthDeepslateOre)))));
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock(magicBlock, () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + magicBlock)))));
+    public static final DeferredBlock<Block> BISMUTH_LAMP_BLOCK = registerBlock(bismuthLampBlock, () -> new BismuthLampBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(BismuthLampBlock.CLICKED) ? 15 : 0).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(TestMod.MODID + ":" + bismuthLampBlock)))));
 
 
     // Helper methods
