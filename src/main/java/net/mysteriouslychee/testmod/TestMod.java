@@ -1,6 +1,7 @@
 package net.mysteriouslychee.testmod;
 
 import net.mysteriouslychee.testmod.block.ModBlocks;
+import net.mysteriouslychee.testmod.component.ModDataComponents;
 import net.mysteriouslychee.testmod.item.ModCreativeModeTabs;
 import net.mysteriouslychee.testmod.item.ModItems;
 import org.slf4j.Logger;
@@ -37,6 +38,8 @@ public class TestMod
 
         ModItems.register(bus);
         ModBlocks.register(bus);
+
+        ModDataComponents.register(bus);
 
         bus.addListener(this::addCreative);
 

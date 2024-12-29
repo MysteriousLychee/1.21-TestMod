@@ -16,6 +16,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.mysteriouslychee.testmod.TestMod;
+import net.mysteriouslychee.testmod.component.ModDataComponents;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.Map;
@@ -35,7 +37,7 @@ public class ChiselItem extends Item
     }
 
     @Override
-    public InteractionResult useOn(UseOnContext context)
+    public @NotNull InteractionResult useOn(UseOnContext context)
     {
         Level lvl = context.getLevel();
         BlockState block = lvl.getBlockState(context.getClickedPos());
@@ -50,6 +52,8 @@ public class ChiselItem extends Item
                        item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                lvl.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+               context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
             return InteractionResult.SUCCESS;
         }
@@ -67,6 +71,11 @@ public class ChiselItem extends Item
         else
         {
             tooltipComponents.add(Component.translatable("tooltip." + TestMod.MODID + ".chisel"));
+        }
+
+        if (stack.get(ModDataComponents.COORDINATES) != null)
+        {
+            tooltipComponents.add(Component.literal("Last block changed at: " + stack.get(ModDataComponents.COORDINATES)));
         }
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
