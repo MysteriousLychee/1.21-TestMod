@@ -1,0 +1,8 @@
+// 1.21.3	2025-01-18T18:17:49.398709	Tags for minecraft:item mod id testmod
+b4d5b58302aed9fcedd41464152d6566ad7d7350 data/minecraft/tags/item/axes.json
+41db894147cb4c203eb5176df5b0b66e9f6acb60 data/minecraft/tags/item/hoes.json
+77ca06594801cdedbb6bc97580aa0e5b7542e53e data/minecraft/tags/item/pickaxes.json
+bae34fe2b1f9cea216f8039e6b68d22e66b0f5aa data/minecraft/tags/item/shovels.json
+c60b12d36dd264ebda02ea01f085644c3a527f2c data/minecraft/tags/item/swords.json
+bdc17e683a90d4d3b45979d808d87c61d92e92fb data/testmod/tags/item/bismuth_tool_repair.json
+dd5dce7e801fea70c180f83d45680ef60785058f data/testmod/tags/item/transformable_items.json

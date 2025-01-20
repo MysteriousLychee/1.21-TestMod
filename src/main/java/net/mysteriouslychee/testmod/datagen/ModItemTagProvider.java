@@ -3,6 +3,7 @@ package net.mysteriouslychee.testmod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.mysteriouslychee.testmod.TestMod;
@@ -29,5 +30,17 @@ public class ModItemTagProvider extends ItemTagsProvider
                 .add(Items.COAL)
                 .add(Items.STICK)
                 .add(Items.COMPASS);
+        tag(ModTags.Items.BISMUTH_TOOL_REPAIR)
+                .add(ModItems.BISMUTH.get());
+        tag(ItemTags.SWORDS)
+                .add(ModItems.BISMUTH_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.BISMUTH_PICKAXE.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.BISMUTH_AXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.BISMUTH_SHOVEL.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.BISMUTH_HOE.get());
     }
 }

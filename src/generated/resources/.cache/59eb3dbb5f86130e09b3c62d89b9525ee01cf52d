@@ -1,0 +1,15 @@
+// 1.21.3	2025-01-18T13:33:11.302423	Loot Tables
+dbe690507d3d031b0c29d6450f3b4affbe6c7464 data/testmod/loot_table/blocks/bismuth_block.json
+e2c95568a7eedef50950087cfed88a45e267a981 data/testmod/loot_table/blocks/bismuth_button.json
+d99610556846c7f8d34b11efa57d193e25b7c2fa data/testmod/loot_table/blocks/bismuth_deepslate_ore.json
+6c4919cc4a6be622d8d04e49b9b1426b02e76042 data/testmod/loot_table/blocks/bismuth_door.json
+f52226efc38c9d94125b08497bd719cf29b4412b data/testmod/loot_table/blocks/bismuth_fence.json
+89aeebe13387d44fa6e399ac338c45404b53c6d6 data/testmod/loot_table/blocks/bismuth_fence_gate.json
+7eda455402c43e98f83584cf35323012b67133a3 data/testmod/loot_table/blocks/bismuth_lamp_block.json
+730852debe3432f43e4eda04625c01c34e85237b data/testmod/loot_table/blocks/bismuth_ore.json
+81b485b9ba1568980bf729c27a626735c4bd4ee4 data/testmod/loot_table/blocks/bismuth_pressure_plate.json
+64ff6490bfbf5f6f058646ab22aa76cbba346474 data/testmod/loot_table/blocks/bismuth_slab.json
+87ff08d8ffb78664ed879de464bd67c9be98dfe3 data/testmod/loot_table/blocks/bismuth_stairs.json
+8b17badfa23f460626e1e965e801cd4033c5e3c6 data/testmod/loot_table/blocks/bismuth_trapdoor.json
+194169e95227bd59264d9b08351bb26d646bb97e data/testmod/loot_table/blocks/bismuth_wall.json
+61e3e8f2c8dfe3faa10b926e2715427fdfac8ea3 data/testmod/loot_table/blocks/magic_block.json

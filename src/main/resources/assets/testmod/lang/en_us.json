@@ -9,6 +9,13 @@
   "item.testmod.starlight_ashes": "Starlight Ashes",
   "item.testmod.frostfire_ice": "Frostfire Ice",
 
+  "item.testmod.bismuth_sword": "Bismuth Sword",
+  "item.testmod.bismuth_pickaxe": "Bismuth Pickaxe",
+  "item.testmod.bismuth_axe": "Bismuth Axe",
+  "item.testmod.bismuth_shovel": "Bismuth Shovel",
+  "item.testmod.bismuth_hoe": "Bismuth Hoe",
+  "item.testmod.bismuth_hammer": "Bismuth Hammer",
+
   "item.testmod.bismuth_block": "Block of Bismuth",
   "item.testmod.bismuth_ore": "Bismuth Ore",
   "item.testmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",

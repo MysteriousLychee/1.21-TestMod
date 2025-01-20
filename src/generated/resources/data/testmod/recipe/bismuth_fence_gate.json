@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "bismuth",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "testmod:bismuth"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "testmod:bismuth_fence_gate"
+  }
+}

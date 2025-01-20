@@ -12,6 +12,9 @@ public class ModTags
 {
     public static class Blocks
     {
+        public static final TagKey<Block> NEEDS_BISMUTH_TOOL = createTag("needs_bismuth_tool");
+        public static final TagKey<Block> INCORRECT_FOR_BISMUTH_TOOL = createTag("incorrect_for_bismuth_tool");
+
         private static TagKey<Block> createTag(String id)
         {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(TestMod.MODID, id));
@@ -21,6 +24,7 @@ public class ModTags
     public static class Items
     {
         public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
+        public static final TagKey<Item> BISMUTH_TOOL_REPAIR = createTag("bismuth_tool_repair");
 
         private static TagKey<Item> createTag(String id)
         {
