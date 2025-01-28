@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import org.jetbrains.annotations.NotNull;
 
 public class BismuthLampBlock extends Block
 {
@@ -21,7 +22,7 @@ public class BismuthLampBlock extends Block
     }
 
     @Override
-    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult)
+    protected @NotNull InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult)
     {
         if (!level.isClientSide())
         {
@@ -29,7 +30,7 @@ public class BismuthLampBlock extends Block
             level.setBlockAndUpdate(pos, state.setValue(CLICKED, !currentState));
         }
 
-        return (InteractionResult.SUCCESS);
+        return InteractionResult.SUCCESS;
     }
 
     @Override
